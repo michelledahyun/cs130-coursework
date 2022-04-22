@@ -1,0 +1,111 @@
+body * {
+   margin: 5px;
+   padding: 5px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 3fr 3fr 3fr 1.5fr;
+   grid-template-rows: 1fr 3fr 2fr; 
+   grid-template-areas:
+      "menu1 menu1 menu2 menu2"
+      "card1 card2 card3 aside "
+      "main main main aside";
+   height: 100vh;
+   grid-row-gap: 5%;
+   grid-column-gap: 2%;
+
+   min-height: 100vh;
+}
+
+.menu1 {
+   background-color: rgb(214, 6, 138);
+   grid-area: menu1;
+   width: 30%;
+   margin-bottom: 8%;
+}
+
+.menu2 {
+   background-color: rgb(255, 238, 47);
+   grid-area: menu2;
+   margin-bottom: 8%;   
+}
+
+.card1,.card2,.card3 {
+   background-color: rgb(9, 174, 233);
+   grid-area: card1;
+}
+
+.card2 {
+   background-color: rgb(9, 174, 233);
+   grid-area: card2;
+}
+
+.card3 {
+   background-color: rgb(9, 174, 233);
+   grid-area: card3;
+}
+
+.main {
+   background-color: rgb(9, 174, 233);
+   grid-area: main;
+}
+
+.aside {
+   background-color: rgb(49, 50, 50);
+   grid-area: aside;
+}
+
+
+@media (max-width: 1024px) {
+   .container {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: .5fr .75fr 3fr 2fr 1fr; 
+      grid-template-areas:
+         "menu1 menu2"
+         "aside aside"
+         "card1 card2"
+         "card3 card3"
+         "main main";
+      height: 100vh;
+      grid-row-gap: 2%;
+      grid-column-gap: 3%;
+      min-height: 100vh;
+   }
+   .menu1 {
+      margin-bottom: 0px;
+   }
+   
+   .menu2 {
+      margin-bottom: 0px;
+   }
+}
+
+@media (max-width: 600px) {
+   .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-areas:
+         "menu1"
+         "menu2"
+         "card1"
+         "card2"
+         "card3"
+         "main"
+         "aside";
+      height: 100vh;
+      grid-row-gap: 1%;
+   
+      min-height: 100vh;
+   }
+
+   .menu1 {
+      margin-bottom: 0px;
+   }
+   
+   .menu2 {
+      margin-bottom: 0px;
+   }
+}
