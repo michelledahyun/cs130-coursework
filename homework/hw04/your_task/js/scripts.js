@@ -123,6 +123,11 @@ const getArtistHTML = (data) => {
 const handleTrackClick = (ev) => {
     const previewUrl = ev.currentTarget.getAttribute('data-preview-track');
     console.log(previewUrl);
+
+    audioPlayer.setAudioFile(previewUrl);
+    audioPlayer.play();
+
+    document.querySelector("#current-track").innerHTML=ev.currentTarget.innerHTML
 }
 
 document.querySelector('#search').onkeyup = (ev) => {
