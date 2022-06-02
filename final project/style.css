@@ -1,0 +1,486 @@
+/* Overall Styling */
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.alert { /* alert info */
+    padding: 20px;
+    background-color: #E9967A;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bolder;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+
+h1 { /* CHANGE FONT AND SPACING HERE! */
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+  }
+
+a { text-decoration: none;
+    color:black}
+
+/* Navigation Bar */
+.navbar{
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+}
+.navbar a:hover{
+    color: white;
+}
+
+
+.button{  /*crisis hotline button */
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    font-size: 1em;
+    color: black;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding-bottom: 20px;
+    width: 200px;
+    height: 35px;
+    align-items: center;
+    list-style-type: none;
+    margin: 15px;
+    padding: 8px;
+    display:flex;
+    justify-content: center;
+
+}
+
+li .button:hover {
+    font-weight: bolder;
+    background-color: #6daa8c;
+    border: #6daa8c;
+    
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+.nu-font{
+    font-family: Akkurat Pro Regular;
+    font-weight:400;
+    letter-spacing: 0.65mm;
+    color: black;
+    text-align: center;
+    margin-left: 20 px;
+    
+}
+
+.crisis {
+    padding-left: 55px;
+    padding-right: 55px;
+
+}
+
+
+/* Home Page Section 1: we are here to help you */
+.section-1{
+    background-color: #e1f4e8;
+    padding:90px;
+    height: 600px;
+}
+
+.section-1-items{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e1f4e8;
+    text-align: center;
+    
+}
+/* font effect */
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+/* text positioning in sec 1 */
+.sec1{
+    display:flex;
+    justify-content: center;
+    padding: 10PX;
+}
+
+.green{
+    display: flex;
+    justify-content: center;
+    background-color: #89d0ac;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #89d0ac;
+    width: 350px;
+    height: 35px;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.green:hover{
+    opacity: 0.6;
+    font-size: large;
+}
+.sec1 a {
+    color:white;
+}
+
+.sec1 a:hover {
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+
+/* Home page section 2: how to access services*/
+
+
+.section-2{
+    background-color: #f2f2f2;
+    padding:100px;
+
+}
+
+.section-2-items > p{
+    text-align: center;
+    margin: 20px;
+    color:rgb(62, 62, 62);
+}
+
+img{
+    display: flex;
+    width:280px;
+    height:280px;
+}
+
+/* cards */
+body * {
+    box-sizing: border-box;
+}
+card {
+    display: flex;
+}
+card > div {
+    margin: 10px;
+    border: solid 1px #cbe0cb;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color: #cbe0cb;
+}
+card h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+card p {
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.button-position{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-button{
+    display: flex;
+    justify-content: center;
+    background-color: #89d0ac;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid #89d0ac;
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 15px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.card-button:hover{
+    opacity: 1;
+    color:white;
+    font-size: large;
+}
+.section-2 a:hover{
+    color: white;
+}
+
+
+/* Home page section 3: Need additional resources? */
+.section-3{
+    background-color: #e1f4e8;
+    padding:70px;
+    height: 400px;
+}
+
+.sec3{
+    display:flex;
+    justify-content: center;
+    padding: 10PX;
+}
+.section-3-items{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e1f4e8;
+    text-align: center;
+    color:rgb(62, 62, 62);
+    
+}
+
+
+/* Home page section 4: Confidentiality */
+.section-4{
+    background-color: #a9d1ae;
+    padding:50px;
+}
+
+.section-4-items{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4 p {
+    margin: 25px;
+    color:rgb(62, 62, 62);
+}
+
+.section-4 li{
+    margin: 25px;
+    color:rgb(62, 62, 62);
+
+}
+
+card-2 {
+    display: flex;
+    width: 700px;
+    height:500px;
+
+
+}
+card-2 > div {
+    margin: 10px;
+    border: solid 1px #e1f4e8;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color: #e1f4e8;
+}
+card-2 h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+card-2 p {
+    line-height: 1.4em;
+    text-align: center;
+}
+
+card-3 {
+    display: flex;
+    width: 700px;
+    height:500px;
+
+}
+card-3 > div {
+    margin: 10px;
+    border: solid 1px #e1f4e8;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    background-color: #e1f4e8;
+}
+card-3 h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+card-3 p {
+    line-height: 1.4em;
+    text-align: center;
+}
+
+/* footer */
+.footer-items {
+    background-color: #d4d4d4;
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2fr;
+    grid-template-rows: 3fr; 
+    grid-template-areas:
+        "school location phone";
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    height: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+    
+
+}
+
+
+.school {
+    grid-area: school;
+    display: grid;
+    align-items: start;
+
+
+}
+
+    .school > p{
+        font-family: Akkurat Pro Regular;
+        font-weight: lighter;
+        font-size: 30px;
+        text-align: left;
+        color: rgb(62, 62, 62);
+        letter-spacing: 0.8mm;
+        
+    }
+
+.location {
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr; 
+    grid-template-areas:
+        "icon1 location"
+        "icon location2";
+}
+
+    .location > i{
+        grid-area: icon1;
+        color:rgb(62, 62, 62);
+        display: grid;
+        justify-content: end;
+        padding-right: 20px;
+        font-size: 1.5em;
+        align-items: center;
+
+    }
+    .location > b{
+        grid-area: location;
+        display: grid;
+        align-items: center;
+    }
+
+    .location > p{
+        grid-area: location2;
+        
+    }
+
+
+.phone {
+    grid-area: phone;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr; 
+    grid-template-areas:
+        "icon2 phone"
+        "icon phone2";
+}
+
+    .phone > i{
+        grid-area: icon2;
+        color:rgb(62, 62, 62);
+        display: grid;
+        justify-content: end;
+        padding-right: 20px;
+        font-size: 1.3em;
+        align-items: center;
+
+    }
+    .phone > b{
+        grid-area: phone;
+        display: grid;
+        align-items: center;
+    }
+
+    .phone > p{
+        grid-area: phone2;
+        
+    }
+
+/* footer fonts */
+.location, .phone > b{
+    color:rgb(62, 62, 62);
+    letter-spacing: .4mm;
+}
+
+.location, .phone > p{
+    color:rgb(62, 62, 62);
+    letter-spacing: .4mm;
+}
+/*     */
+

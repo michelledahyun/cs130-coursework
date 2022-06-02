@@ -1,0 +1,786 @@
+/* Overall Styling */
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    
+}
+h1 { /* CHANGE FONT AND SPACING HERE! */
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+  }
+
+h2 { /* CHANGE FONT AND SPACING HERE! */
+    font-size: 25px;
+    text-align: left;
+    color: rgb(62, 62, 62);
+    letter-spacing: 2px;
+    margin-left: 15px;
+  }
+
+h3 {
+    font-size: 23px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+
+}
+
+h4 {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(62, 62, 62);
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+
+}
+
+
+a { text-decoration: none;
+    color:black}
+
+/* Navigation Bar */
+
+.crisis {
+    padding-left: 20px;
+
+}
+
+.navbar{
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+}
+.navbar a:hover{
+    color: white;
+}
+
+
+.button{  /*crisis hotline button */
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    font-size: 1em;
+    color: black;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding-bottom: 20px;
+    width: 200px;
+    height: 35px;
+    align-items: center;
+    list-style-type: none;
+    margin: 15px;
+    padding: 8px;
+    display:flex;
+    justify-content: center;
+
+}
+
+li .button:hover {
+    font-weight: bolder;
+    background-color: #6daa8c;
+    border: #6daa8c;
+    
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+.nu-font{
+    font-family: Akkurat Pro Regular;
+    font-weight:400;
+    letter-spacing: 0.65mm;
+    color: black;
+    text-align: center;
+    margin-left: 20 px;
+    
+}
+
+
+/**** ****/
+/*** Resource Page Section 1: main cards ***/
+/**** ****/
+
+.section-1{
+    background-color: #f2f2f2;
+    padding:70px;
+    height: 650px;
+}
+
+
+.section-1-items > p{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+/***** cards *****/
+body * {
+    box-sizing: border-box;
+}
+
+.section-1-items {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:
+        "coping covid"
+        "coping forums"
+        "coping hotlines";
+    grid-row-gap: 15%;
+    grid-column-gap: 2%;
+    height: 95px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.coping {
+    grid-area: coping;
+    background-color: #89d0ac;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 490px;
+
+
+}
+
+    .coping-img {
+        width: 600px;
+        height: 450px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        cursor: pointer;   
+        object-fit: cover;
+
+    }
+
+.covid {
+    grid-area: covid;
+    background-color: #bcdc95;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+
+}
+
+    .covid-img {
+        width: 230px;
+        height: 115px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        cursor: pointer;
+        object-fit: cover;
+
+        
+    }
+
+.forums {
+    grid-area: forums;
+    background-color: #a9d1ae;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
+
+    .forums-img {
+        width: 230px;
+        height: 115px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        cursor: pointer;
+        object-fit: cover;
+        
+    }
+
+.hotlines {
+    grid-area: hotlines;
+    background-color: #cbe0b2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
+
+    .hotlines-img {
+        width: 230px;
+        height: 115px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        cursor: pointer;
+        object-fit: cover;
+
+        
+    }
+
+
+/** buttons **/
+.button-position{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10PX;
+}
+
+.card-button{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 1.1em;
+    color: black;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.card-button > a {
+    color: rgb(54, 54, 54);
+    font-size: 1.1em;
+}
+
+.card-button > a:hover {
+    color: white;
+    font-size: 1.1em;
+}
+
+
+
+/* text positioning in sec 1 */
+.sec1{
+    display:flex;
+    justify-content: center;
+    padding: 10PX;
+}
+
+.green{
+    display: flex;
+    justify-content: center;
+    background-color: #89d0ac;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #89d0ac;
+    width: 350px;
+    height: 35px;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+
+/**** ****/
+/**** Resource page section 2: ready to start therapy? *****/
+/**** ****/
+
+.section-2{
+    background-color: #d4f8e2;
+    padding:100px;
+}
+
+.section-2-items > p{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+
+
+/****** Carousels *******/
+
+#coping-slider {
+    height: 500px;
+    background-color: #89d0ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#covid-slider {
+    height: 500px;
+    background-color: #bcdc95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#forum-slider {
+    height: 500px;
+    background-color: #a9d1ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+
+}
+
+.controller {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.slide-img {
+    width: 100%;
+    height: 275px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.slide {
+    padding: 10px;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(255, 255, 255, 0.709) inset;
+
+}
+
+.slide-img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: gray;
+
+}
+
+.slide-img > p{
+    text-align: center;
+
+}
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+
+/*CAROUSEL */
+
+.copingcard1, .copingcard2, .copingcard3, .copingcard4, .copingcard5, .copingcard6,
+.covidcard1, .covidcard2, .covidcard3, .covidcard4,
+.forumcard1, .forumcard2, .forumcard3, .forumcard4, .forumcard5, .forumcard6, .forumcard7, .forumcard8 {
+    background: none;
+    outline: none;
+    border: none;
+    
+
+}
+
+/* Coping Images*/
+.img-1 {
+    background-image: url("graphics/racism.png")
+}
+
+.img-2 {
+    background-image: url("graphics/black.png")
+}
+
+.img-3 {
+    background-image: url("graphics/asian.png")
+}
+
+.img-4 {
+    background-image: url("graphics/sa.png")
+}
+
+.img-5 {
+    background-image: url("graphics/gay.png")
+}
+
+.img-6 {
+    background-image: url("graphics/women.png")
+}
+
+/* Covid Images*/
+.img-7 {
+    background-image: url("graphics/safety.png")
+}
+
+.img-8 {
+    background-image: url("graphics/tele.png")
+}
+
+.img-9 {
+    background-image: url("graphics/day.png")
+}
+
+.img-10 {
+    background-image: url("graphics/night.png")
+}
+
+/* Self Help Images*/
+.img-11 {
+    background-image: url("graphics/anger.png")
+}
+
+.img-12 {
+    background-image: url("graphics/anxiety.png")
+}
+
+.img-13 {
+    background-image: url("graphics/body.png")
+}
+
+.img-14 {
+    background-image: url("graphics/help.png")
+}
+
+.img-15 {
+    background-image: url("graphics/abuse.png")
+}
+
+.img-16 {
+    background-image: url("graphics/injury.png")
+}
+
+.img-17 {
+    background-image: url("graphics/relationship.png")
+}
+
+.img-18 {
+    background-image: url("graphics/esteem.png")
+}
+
+
+
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+/* previous & next buttons */
+.previous, .next,
+.previous2, .next2,
+.previous3, .next3 {
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 20%;
+    outline: none;
+    border: none;
+    transition: 0.7s ease-in-out;
+    box-shadow: 0 0 5px #bbb;
+}
+
+#controls i{
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* modals */
+
+.modal_containerHotlines,
+.modal_container, 
+.modal_container2,
+.modal_container3,
+.modal_container4,
+.modal_container5,
+.modal_container6,
+.modal_container7,
+.modal_container8,
+.modal_container9,
+.modal_container10,
+.modal_container11, 
+.modal_container12,
+.modal_container13,
+.modal_container14,
+.modal_container15,
+.modal_container16,
+.modal_container17,
+.modal_container18
+
+{
+    --gap: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+}
+
+.modal_containerHotlines.show,
+.modal_container.show, 
+.modal_container2.show,
+.modal_container3.show,
+.modal_container4.show,
+.modal_container5.show,
+.modal_container6.show,
+.modal_container7.show,
+.modal_container8.show,
+.modal_container9.show,
+.modal_container10.show,
+.modal_container11.show, 
+.modal_container12.show,
+.modal_container13.show,
+.modal_container14.show,
+.modal_container15.show,
+.modal_container16.show,
+.modal_container17.show,
+.modal_container18.show
+ {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal__inner {
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+
+.modal__top {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+
+}
+
+.modal__title {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.modal__content {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2;
+}
+
+.modal__content a{
+    color:rgb(95, 95, 95);
+}
+
+.modal__content p{
+    color:rgb(95, 95, 95);
+
+}
+
+.modal__content a:hover{
+    color: rgb(121, 217, 174);
+}
+
+.modal__bottom {
+    text-align: right; 
+    padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+#closeHotlines, #close, #close2, #close3, #close4, #close5, #close6,
+#close7, #close8, #close9, #close10,
+#close11, #close12, #close13, #close14, #close15, #close16,
+#close17, #close18 {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #00957B;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#closeHotlines:hover, 
+#close:hover, #close2:hover, #close3:hover, #close4:hover,
+#close5:hover, #close6:hover,
+#close7:hover, #close8:hover, #close9:hover, #close10:hover,
+#close11:hover, #close12:hover, #close13:hover, #close14:hover, #close15:hover, #close16:hover,
+#close17:hover, #close18:hover {
+    background: #008066;
+    
+}
+
+
+/* footer */
+.footer-items {
+    background-color: #d4d4d4;
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2fr;
+    grid-template-rows: 3fr; 
+    grid-template-areas:
+        "school location phone";
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    height: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+    
+
+}
+
+
+.school {
+    grid-area: school;
+    display: grid;
+    align-items: start;
+
+
+}
+
+    .school > p{
+        font-family: Akkurat Pro Regular;
+        font-weight: lighter;
+        font-size: 30px;
+        text-align: left;
+        color: rgb(62, 62, 62);
+        letter-spacing: 0.8mm;
+        
+    }
+
+.location {
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr; 
+    grid-template-areas:
+        "icon1 location"
+        "icon location2";
+}
+
+    .location > i{
+        grid-area: icon1;
+        color:rgb(62, 62, 62);
+        display: grid;
+        justify-content: end;
+        padding-right: 20px;
+        font-size: 1.5em;
+        align-items: center;
+
+    }
+    .location > b{
+        grid-area: location;
+        display: grid;
+        align-items: center;
+    }
+    .location > p{
+        grid-area: location2;
+        
+    }
+
+
+.phone {
+    grid-area: phone;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr; 
+    grid-template-areas:
+        "icon2 phone"
+        "icon phone2";
+}
+
+    .phone > i{
+        grid-area: icon2;
+        color:rgb(62, 62, 62);
+        display: grid;
+        justify-content: end;
+        padding-right: 20px;
+        font-size: 1.3em;
+        align-items: center;
+
+    }
+    .phone > b{
+        grid-area: phone;
+        display: grid;
+        align-items: center;
+    }
+    .phone > p{
+        grid-area: phone2;
+        
+    }
+
+/* footer fonts */
+.location, .phone > b{
+    color:rgb(62, 62, 62);
+    letter-spacing: .4mm;
+}
+
+.location, .phone > p{
+    color:rgb(62, 62, 62);
+    letter-spacing: .4mm;
+}
+
+
+
+
